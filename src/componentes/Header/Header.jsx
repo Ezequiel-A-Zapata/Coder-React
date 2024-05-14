@@ -12,7 +12,7 @@ export default function Header() {
         <nav className='navbar'>
             <ul className='lista'>
                 <li><a href="">CELULARES</a></li>
-                <li><a href="">NOTEBOOKS..</a></li>
+                <li><a href="">NOTEBOOKS...</a></li>
                 <li><a href="">ELECTRO-DOMESTICOS</a></li>
             </ul>
         </nav>
