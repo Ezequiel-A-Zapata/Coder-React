@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 body {
     margin: 0%;
-    height: 200vh;
-    background: beige
+    height: auto;
+    background: wheat;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .contenedor-header {
     width: 100%;
@@ -19,19 +21,43 @@ body {
     height: 10vh;
     background-color: white;
     align-items: center;
-    box-shadow: 0px 1px 10px 2px black;
+    box-shadow: 0px 2.5px 5px 0px black;
     border-radius: 60px;
 }
+
 .logo-menu {
     display: flex;
     align-items: center;
     gap: 5%;
 }
-.img-menu {
-    width: 30px;
-    height: 30px;
+.boton-menu {
+    display: flex;
+    flex-direction: column;
+    width: 2.7rem;
     margin-left: 2vw;
+    height:auto ;
+    background: transparent;
+    gap: .50rem;
+    padding: 0;
+    border: none;
 }
+.boton-menu > div{
+    background: black;
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+.boton-menu:hover div:first-child{
+    transform: rotate(43deg);
+}
+.boton-menu:hover div:nth-child(2){
+    opacity: 0;
+}
+.boton-menu:hover div:nth-child(3){
+    transform: rotate(-43deg);
+}   
 .logo{
     font-size: 210%;
 }
@@ -44,23 +70,136 @@ body {
 .lista{
     list-style: none;
     display: flex;
-    gap: 10vw;
+    gap: 6vw;
     font-family: "Josefin Sans", sans-serif;
 }
 .lista li a{
     text-decoration: none;
     color: black;
-    font-size: 90%;
+    font-size: 110%;
+    font-weight: 600;
 }
 .carrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 3vw;
+    height: auto;
+    width: auto;
     font-size:85%;
     font-family: "Josefin Sans", sans-serif;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+.carrito > p{
+    padding: 0;
+    margin: 0;
 }
 main{
+    max-width: 100%;
     width: 100vw;
-    display: flex;
-    justify-content: center;
     margin-top: 18vh;
     height: auto;
+}
+.main-titulo{
+    font-family:"Josefin Sans", sans-serif ;
+    margin-left: 10vw;
+}
+
+.item-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.producto-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    width: 20vw;
+    background: white;
+    border-radius: 17px;
+    box-shadow: 0px 2.5px 5px 0px black; 
+    height: auto;
+    gap: 2vh;
+}
+.producto-imagen{
+    margin-top: 2vh;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+.producto-titulo{
+    font-size: smaller;
+    height: 3vh;
+}
+.producto-precio {
+    margin: 0;
+    height: 3vh;
+}
+.button-ver-mas{
+    background-color:rgb(57, 202, 57);
+    border:khaki;
+    font-family:"Josefin Sans", sans-serif ;
+    font-size: 100%;
+    border-radius: 5px;
+    height: 3.5vh;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+.button-ver-mas:hover{
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+.item-detail-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-detail{
+    text-align: center;
+    margin-top: 10vh;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 45vh;
+    margin-top: 5vh;
+    background-color: rgb(22, 22, 22);
+}
+.info-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 7vh;
+}
+.titulo-final{
+    color: beige;
+    font-family:  "Josefin Sans", sans-serif;
+    font-size:35px;
+}
+.categorias{
+    font-size: 20px;
+}
+.marcas {
+    font-size: 20px;
+}
+.ul-final{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    font-family:"Josefin Sans", sans-serif ;
+    list-style: none;
+    color: beige;
 }

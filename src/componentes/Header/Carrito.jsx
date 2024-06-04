@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Carrito() {
+function Carrito({numerito}) {
     return (
-    <div className='carrito'><p>🛒CARRITO</p></div>
+    <button className='carrito'><p>🛒{numerito}</p></button>
     )
 }
 
