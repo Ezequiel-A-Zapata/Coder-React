@@ -1,19 +1,23 @@
 [
 
 {
-    "id":"women's clothing",
-    "nombre":"Women's clothing"
+    "id":"accesorios",
+    "nombre":"accesorios"
 },
 {
-    "id":"men's clothing",
-    "nombre":"Men's clothing"
+    "id":"remeras",
+    "nombre":"remeras"
 },
 {
-    "id":"jewelery",
-    "nombre":"Jewelery"
+    "id":"pantalones",
+    "nombre":"pantalones"
 },
 {
-    "id":"electronics",
-    "nombre":"Electronics"
+    "id":"camisas",
+    "nombre":"camisas"
+},
+{
+    "id": "bermudas",
+    "nombre": "bermudas"
 }
 ]

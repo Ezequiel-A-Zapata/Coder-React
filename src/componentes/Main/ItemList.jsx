@@ -12,7 +12,7 @@ function ItemList( {productos, titulo} ) {
                         return (
                             <Item key={producto.id} producto={producto} />
                             )
-                    }) : <p>cargando...</p>
+                    }) : <h2 className='cargando'>cargando...</h2>
                 }
             </div>
         </>

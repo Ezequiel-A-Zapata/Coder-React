@@ -1,11 +1,25 @@
-import React from 'react'
-import Carrito from './Carrito'
+import React, { useEffect, useState } from 'react'
 import MenuHamburguesa from './MenuHamburguesa'
 import { Link, NavLink } from 'react-router-dom'
-import categorias from  '../../services/categorias.json'
+import { db } from '../../firebase/config'
+import { collection,getDocs } from 'firebase/firestore'
+import CarritoNav from './CarritoNav'
 
-export default function Header({ numerito }) {
-    console.log (categorias);
+export default function Header( ) {
+
+    const [categorias, setCategorias] = useState([])
+    const categoriasRef = collection (db, "categorias")
+    
+useEffect(()=>{
+    getDocs(categoriasRef)
+        .then((res)=>{
+            setCategorias(res.docs.map((doc)=> {
+                return {...doc.data(), id: doc.id}
+            }))
+        });
+        console.log(categorias);
+},[])
+    
     return (
         <div className='contenedor-header'>
             <header className='header'>
@@ -28,7 +42,7 @@ export default function Header({ numerito }) {
                             }
                     </ul>
                 </nav>
-                <Carrito numerito={numerito} />
+                <CarritoNav />
             </header>
         </div>
     )
