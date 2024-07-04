@@ -262,3 +262,99 @@ main{
     align-items: center;
     height: 68vh;
 }
+.carrito{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-carrito{
+    display: flex;
+    margin-left: 10vw;
+    width: 40vw;
+    height: 17vh;
+    margin-top: 18vh;
+    padding: 0%;
+    gap: 1vw;
+    justify-content: space-between;
+}
+
+.contenedor-npc{
+    display: flex;
+    align-items: start;
+    font-family: "Josefin Sans", sans-serif;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+.carrito-total{
+    display: flex;
+    margin-top: 10vh;
+    font-family: "Josefin Sans", sans-serif;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+.vaciar-carrito{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+}
+.boton-borrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5vh;
+    width: 1.3vw;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.finalizar-compra{
+display: flex;
+justify-content: center;
+font-family: "Josefin Sans", sans-serif;
+color: black;
+}
+.formulario{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario h1{
+    font-family: "Josefin Sans", sans-serif;
+}
+.producto-card-check{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    width: auto;
+    height: auto;
+}
+.producto-titulo-check{
+    font-size: smaller;
+    height: 3vh;
+}
+.producto-precio-check {
+    margin: 0;
+    height: 3vh;
+}
+.contenedor-info-check{
+    display: inline-block;
+    margin: 0;
+}
+.total-compra{
+    font-family: "Josefin Sans", sans-serif;
+}
+.datos-usuarios{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
